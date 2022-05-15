@@ -1,0 +1,230 @@
+
+**** 04/24/22 16:00:38 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Lab9"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 9\Lab9-PSpiceFiles\SCHEMATIC1\Lab9.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Lab9.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Harry\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 400us 0 1us 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB9
+X_U1         N00621 N01660 N01328 N01170 N01776 LM741
+X_U2         N00621 N01656 N01328 N01170 N01854 LM741
+X_U3         N00621 N01652 N01328 N01170 N01842 LM741
+X_U6         N00621 N01640 N01328 N01170 N01800 LM741
+X_U4         N00621 N01648 N01328 N01170 N01827 LM741
+X_U5         N00621 N01644 N01328 N01170 N01812 LM741
+X_U7         N00621 N01601 N01328 N01170 N01788 LM741
+X_U8         0 N01776 N01854 N01842 N01827 N01812 N01800 N01788 0 N00499 N00503
++  N00507 M_UN0001 M_UN0002 $G_DPWR $G_DGND 74LS148 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+V_V1         N00621 0  
++PULSE 0 7V 0 .2m 0 .2m .2m
+V_V2         N01664 0 7V
+V_V3         N01170 0 -10V
+V_V4         N01328 0 10V
+R_R1         N01660 N01664  1k TC=0,0 
+R_R2         N01656 N01660  1k TC=0,0 
+R_R3         N01652 N01656  1k TC=0,0 
+R_R4         N01648 N01652  1k TC=0,0 
+R_R5         N01644 N01648  1k TC=0,0 
+R_R6         N01640 N01644  1k TC=0,0 
+R_R7         N01601 N01640  1k TC=0,0 
+R_R8         N01601 0  1k TC=0,0 
+
+**** RESUMING Lab9.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node 0
+*
+* Moving X_U8.ULS148LOG:IN9 from analog node 0 to new digital node 0$AtoD
+X$0_AtoD1
++ 0
++ 0$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U8.ULS148LOG:IN1 from analog node 0 to new digital node 0$AtoD2
+X$0_AtoD2
++ 0
++ 0$AtoD2
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N01776
+*
+* Moving X_U8.ULS148LOG:IN2 from analog node N01776 to new digital node N01776$AtoD
+X$N01776_AtoD1
++ N01776
++ N01776$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N01854
+*
+* Moving X_U8.ULS148LOG:IN3 from analog node N01854 to new digital node N01854$AtoD
+X$N01854_AtoD1
++ N01854
++ N01854$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N01842
+*
+* Moving X_U8.ULS148LOG:IN4 from analog node N01842 to new digital node N01842$AtoD
+X$N01842_AtoD1
++ N01842
++ N01842$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N01800
+*
+* Moving X_U8.ULS148LOG:IN7 from analog node N01800 to new digital node N01800$AtoD
+X$N01800_AtoD1
++ N01800
++ N01800$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N01827
+*
+* Moving X_U8.ULS148LOG:IN5 from analog node N01827 to new digital node N01827$AtoD
+X$N01827_AtoD1
++ N01827
++ N01827$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N01812
+*
+* Moving X_U8.ULS148LOG:IN6 from analog node N01812 to new digital node N01812$AtoD
+X$N01812_AtoD1
++ N01812
++ N01812$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N01788
+*
+* Moving X_U8.ULS148LOG:IN8 from analog node N01788 to new digital node N01788$AtoD
+X$N01788_AtoD1
++ N01788
++ N01788$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+
+ERROR -- EVALUATION VERSION analog Node Limit (75 Nodes) Exceeded!
+
+
+
+
+ABORTING SIMULATION
+**** 04/24/22 16:00:38 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Lab9"  [ C:\Users\Harry\Desktop\Spring 2022 CSUN\ECE 443L\Lab 9\Lab9-PSpiceFiles\SCHEMATIC1\Lab9.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          12
+  External (NCNODS)                 =         126
+  Total (NUMNOD)                    =         126
+
+Total device count (NUMEL)          =         264
+  Capacitors (C)                    =          23
+  Diodes (D)                        =          35
+  VCVS (E)                          =           7
+  CCCS (F)                          =           7
+  VCCS (G)                          =          23
+  CCVS (H)                          =           7
+  Current Sources (I)               =           7
+  Dig. Outputs (O)                  =           9
+  BJTs (Q)                          =          14
+  Resistors (R)                     =          73
+  Dig. Devices (U)                  =          11
+  Voltage Sources (V)               =          48
+
+Number of subcircuits (X)           =          34
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+  No. digital nets (DIGNET)         =          28
+  No. next time evals (DIGTP)       =           0
+  No. events (DIGEVT)               =           0
+  No. device evals (DIGEVL)         =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Digital simulation                =        0.00
+  Readin                            =         .02
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        4.06
+  License check-out time            =        4.06
+  Total job time                    =         .03
+
